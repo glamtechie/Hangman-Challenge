@@ -1,0 +1,9 @@
+For every letter in a word:
+P(letter|previous predictions)= sum over all words in vocabulary(P(word,letter|guessed))
+                              = sum over all words in the vocabulary(P(letter|words)*P(guessed|words)*P(words)/normalizing_constant)
+
+The denominator will be a normalizing constant which we can ignore since we are comparing letters.
+P(letter|words) will either be 0 or 1 considering a letter can either be in a word or not. P(guessed|words) also follows similar logic. P(words) is calculated by us from the data we have.
+
+Finally, here is what we choose:
+= max_probability_letter(max_probability_letter_for_each_word(probability of every letter occuring in the word given guesses))
