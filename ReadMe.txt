@@ -2,7 +2,7 @@ The given code is in Python and runs on Python 2.7
 
 Download the folder from the link
 To run type this in the terminal:
-    cd Hulu
+    cd Hangman-Challenge
     python play.py
 
 
